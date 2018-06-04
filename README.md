@@ -45,3 +45,13 @@ PICKLE_FILENAME=classifier_pickle
 * Improve classification model and build data sets directly from Stack Overflow
 * Look into tfidf, tnse, and ngrams
 * May consider an actual nn for this
+
+## Troubleshooting
+
+In case of error 'InsecurePlatformWarning: A true SSLContext object is not available.', run the following command
+
+```
+pip install requests[security]
+```
+
+Source for troubleshooting tip: https://stackoverflow.com/questions/29134512/insecureplatformwarning-a-true-sslcontext-object-is-not-available-this-prevent

@@ -1,0 +1,5 @@
+nltk
+numpy
+fbchat
+requests
+python-dotenv

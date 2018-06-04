@@ -6,13 +6,13 @@ HelpBot is a primitive chatbot designed to answer technical questions in Faceboo
 
 ## Installation
 
-To install HelpBot, one must simply use the Python Package Manager, pip as shown below. Warning: this code has only been test3ed using python 2. Porting to python 3 should be trivial if need be.
+To install HelpBot, one must simply use the Python Package Manager, pip as shown below. Warning: this code has only been tested using python 2. Porting to python 3 should be trivial if need be.
 
 ```sh
-    pip install -r requirements.txt
-    # Alternative commands (only need to run one) are listed below
-    sudo pip install -r requirements.txt
-    pip install --user requirements.txt
+pip install -r requirements.txt
+# Alternative commands (only need to run one) are listed below
+sudo pip install -r requirements.txt
+pip install --user requirements.txt
 ```
 
 Note: this code has been tested using [virtualenv](https://virtualenv.pypa.io/en/stable/).

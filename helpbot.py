@@ -23,11 +23,12 @@ class AnswerClient(Client):
     def onMessage(self, mid, author_id, message_object, thread_id, thread_type, ts, metadata, msg, **kwargs):
         msg_type = self.classifier.classify(msg)
         question_uri_data = None
+        lower_msg = message_object.text.lower()
         if message_object.text.startswith('ansbot'+' '):
             msg_arr = self.splitter.split(message_object.text)
             msg_arr = msg_arr[1:]
             question_uri_data = '%20'.join(msg_arr)
-        elif msg_type == 'ynQuestion' or msg_type == 'whQuestion' or '?' in message_object.text or any(message_object.text.startswith(qword) for qword in self.question_words):
+        elif msg_type == 'ynQuestion' or msg_type == 'whQuestion' or '?' in message_object.text or any(lower_msg.startswith(qword) for qword in self.question_words):
             msg_arr = self.splitter.split(message_object.text)
             question_uri_data = '%20'.join(msg_arr)
         if question_uri_data != None and question_uri_data != '':

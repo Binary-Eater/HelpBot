@@ -42,6 +42,7 @@ PICKLE_FILENAME=classifier_pickle
 ## TODOS
 
 * Make code forward compatible with Python 3
+* Add robust handlers when classifying text of different casing
 * Improve classification model and build data sets directly from Stack Overflow
 * Look into tfidf, tnse, and ngrams
 * May consider an actual nn for this
